@@ -1,10 +1,10 @@
 "use strict";
 
-const isPrime = function (arg) {
-    for (var i = 2; i < arg; i += 1) {
-        if (arg % i === 0) {
-            return false;
-        }
-    }
-    return true;
-}
+let x = Number(prompt("Enter value"));
+
+let start = new Date();
+let b = isPrime(x);
+let stop = new Date();
+let elapsed = stop - start;
+
+document.write("is it a prime number"+b, elapsed);
